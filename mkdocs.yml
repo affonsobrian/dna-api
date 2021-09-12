@@ -11,4 +11,4 @@ nav:
     - Authentication: 'api/authentication.md'
     - Users: 'api/users.md'
     - DNA: 'api/dna.md'
-    - Status: 'api/status.md'
+    - Status: 'api/stats.md'
