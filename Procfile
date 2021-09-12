@@ -1,0 +1,1 @@
+web: gunicorn dna_api.wsgi --log-file -

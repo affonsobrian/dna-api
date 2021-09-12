@@ -1,0 +1,26 @@
+[run]
+branch = True
+
+omit = *migrations*,
+       *urls*,
+       *test*,
+       *admin*,
+       ./manage.py,
+       ./dna_api/config/*,
+       ./dna_api/wsgi.py,
+       ./dna_api/dna/apps.py
+       *__init__*
+
+[report]
+show_missing = True
+omit = *migrations*,
+       *urls*,
+       *test*,
+       *admin*,
+       ./manage.py,
+       ./dna_api/dna/apps.py
+       ./dna_api/config/*,
+       ./dna_api/wsgi.py,
+       *__init__*
+
+exclude_lines = pragma: no cover
