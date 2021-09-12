@@ -37,7 +37,6 @@ class DNAService:  # pragma: no cover
                 count, mutant_count, last_letter = DNAService._dna_iteration_counter(
                     i, j, data, count, mutant_count, last_letter, search_size
                 )
-                print(count, mutant_count, last_letter, i, j)
                 if mutant_count > 1:
                     return True
 
