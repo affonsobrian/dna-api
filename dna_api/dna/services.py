@@ -12,14 +12,14 @@ class DNAService:  # pragma: no cover
         last_letter: str,
         search_size: int,
     ) -> tuple:
-        if count == search_size:
-            mutant_count += 1
-            count = 0
-            last_letter = None
         if data[i][j] == last_letter or last_letter is None:
             count += 1
         else:
             count = 1
+        if count == search_size:
+            mutant_count += 1
+            count = 0
+            last_letter = None
         last_letter = data[i][j]
         return count, mutant_count, last_letter
 
@@ -37,6 +37,7 @@ class DNAService:  # pragma: no cover
                 count, mutant_count, last_letter = DNAService._dna_iteration_counter(
                     i, j, data, count, mutant_count, last_letter, search_size
                 )
+                print(count, mutant_count, last_letter, i, j)
                 if mutant_count > 1:
                     return True
 
