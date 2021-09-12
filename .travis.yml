@@ -1,0 +1,17 @@
+language: python
+python:
+  - "3.8"
+
+env:
+  - DJANGO_SECRET_KEY=local DATABASE_URL=postgres://postgres:@127.0.0.1:5432/postgres
+
+services:
+  - postgres
+
+# command to install dependencies
+install:
+  - pip install poetry && poetry config virtualenvs.create false && poetry install --no-dev --no-interaction --no-ansi
+
+# command to run tests
+script:
+  - python manage.py test

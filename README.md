@@ -1,6 +1,6 @@
 # dna-api
 
-[![Build Status](https://travis-ci.org/affonsobrian/dna-api.svg?branch=master)](https://travis-ci.org/affonsobrian/dna-api)
+[![Build Status](https://api.travis-ci.com/affonsobrian/dna-api.svg?branch=main)](https://app.travis-ci.com/github/affonsobrian/dna-api)
 [![Built with](https://img.shields.io/badge/Built_with-Cookiecutter_Django_Rest-F7B633.svg)](https://github.com/agconti/cookiecutter-django-rest)
 
 An API that stores genes and show stats of it. Check out the project's [documentation](http://affonsobrian.github.io/dna-api/).
