@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.8"
+
+# command to install dependencies
+install:
+  - pip install poetry
+  - poetry config virtualenvs.create false \
+    && poetry install --no-dev --no-interaction --no-ansi
+# command to run tests
+script:
+  - python manage.py test
