@@ -11,7 +11,7 @@ Parameters:
 
 Name       | Type         | Required | Description
 -----------|--------------|----------|------------
-dna        | List[string] | Yes      | The username for the new user.
+dna        | List[string] | Yes      | The genes from that DNA
 
 
 *Note:*
